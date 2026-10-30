@@ -1,0 +1,276 @@
+{
+  "type1": [
+    {
+      "id": "T1-1",
+      "title": "타이타닉 결측치 대체 및 표준편차 차이",
+      "dataset": "data/titanic.csv",
+      "description": "titanic.csv 데이터셋에서 'Age' 컬럼의 결측치(NaN)를 'Age' 컬럼의 중앙값(median)으로 대체한 후, 결측치 대체 전 'Age'의 표준편차와 대체 후 'Age'의 표준편차의 차이의 절댓값을 구하시오. (결과는 소수점 둘째 자리까지 반올림하여 출력)",
+      "hint": "1. 대체 전 표준편차: df['Age'].std()\n2. 중앙값 계산: median_val = df['Age'].median()\n3. 대체 후 표준편차: df['Age'].fillna(median_val).std()\n4. 절댓값 및 반올림: round(abs(std_before - std_after), 2)",
+      "starter_code": "import pandas as pd\nimport numpy as np\n\ndf = pd.read_csv('data/titanic.csv')\n\n# 결측치 대체 전 표준편차\n\n# 중앙값으로 대체 후 표준편차\n\n# 차이의 절댓값 계산 후 출력\n",
+      "solution_code": "import pandas as pd\nimport numpy as np\n\ndf = pd.read_csv('data/titanic.csv')\nstd_before = df['Age'].std()\nmed_val = df['Age'].median()\nstd_after = df['Age'].fillna(med_val).std()\n\nans = round(abs(std_before - std_after), 2)\nprint(ans)",
+      "expected": 1.49,
+      "answer_type": "float",
+      "tolerance": 0.02,
+      "points": 10
+    },
+    {
+      "id": "T1-2",
+      "title": "보스턴 주택 이상치(IQR) 탐지 및 합계",
+      "dataset": "data/boston_housing.csv",
+      "description": "boston_housing.csv 데이터셋에서 'CRIM'(1인당 범죄율) 컬럼의 사분위수 범위(IQR = Q3 - Q1)를 계산하고, 이상치 기준(Q1 - 1.5*IQR 미만 또는 Q3 + 1.5*IQR 초과)에 해당하는 값들의 총합을 구하시오. (소수점 둘째 자리까지 반올림하여 출력)",
+      "hint": "1. Q1 = df['CRIM'].quantile(0.25)\n2. Q3 = df['CRIM'].quantile(0.75)\n3. IQR = Q3 - Q1\n4. 이상치 필터링: df[(df['CRIM'] < Q1 - 1.5*IQR) | (df['CRIM'] > Q3 + 1.5*IQR)]['CRIM'].sum()",
+      "starter_code": "import pandas as pd\n\ndf = pd.read_csv('data/boston_housing.csv')\n\n# Q1, Q3, IQR 계산\n\n# 이상치 조건 필터링 및 합계 계산\n",
+      "solution_code": "import pandas as pd\n\ndf = pd.read_csv('data/boston_housing.csv')\nq1 = df['CRIM'].quantile(0.25)\nq3 = df['CRIM'].quantile(0.75)\niqr = q3 - q1\noutliers = df[(df['CRIM'] < q1 - 1.5 * iqr) | (df['CRIM'] > q3 + 1.5 * iqr)]['CRIM']\nans = round(outliers.sum(), 2)\nprint(ans)",
+      "expected": 389.01,
+      "answer_type": "float",
+      "tolerance": 0.05,
+      "points": 10
+    },
+    {
+      "id": "T1-3",
+      "title": "쇼핑 트랜잭션 시계열 필터링 및 그룹 총액",
+      "dataset": "data/customer_shopping.csv",
+      "description": "customer_shopping.csv 데이터셋에서 2023년 상반기(2023-01-01부터 2023-06-30까지) 동안 'Clothing' 카테고리에서 발생한 총 주문 금액('TotalAmount')의 총합을 구하시오. (반올림하여 정수로 출력)",
+      "hint": "1. 날짜형 변환: df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])\n2. 기간 조건 및 카테고리 조건 결합: (df['InvoiceDate'] >= '2023-01-01') & (df['InvoiceDate'] <= '2023-06-30') & (df['Category'] == 'Clothing')\n3. TotalAmount 합계 계산: round(filtered_df['TotalAmount'].sum())",
+      "starter_code": "import pandas as pd\n\ndf = pd.read_csv('data/customer_shopping.csv')\n\n# InvoiceDate 컬럼 날짜형 변환\n\n# 2023년 상반기 & Clothing 카테고리 필터링\n\n# TotalAmount 총합 정수로 출력\n",
+      "solution_code": "import pandas as pd\n\ndf = pd.read_csv('data/customer_shopping.csv')\ndf['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])\ncond = (df['InvoiceDate'] >= '2023-01-01') & (df['InvoiceDate'] <= '2023-06-30') & (df['Category'] == 'Clothing')\nans = round(df[cond]['TotalAmount'].sum())\nprint(ans)",
+      "expected": 52975,
+      "answer_type": "int",
+      "tolerance": 1,
+      "points": 10
+    },
+    {
+      "id": "T1-4",
+      "title": "타이타닉 운임 상위 10% 승객의 생존율",
+      "dataset": "data/titanic.csv",
+      "description": "titanic.csv 데이터셋에서 'Fare'(운임)가 상위 10% 이상(90백분위수 이상)인 승객들 중 'Survived'가 1인(생존한) 승객의 비율(생존율)을 구하시오. (소수점 셋째 자리까지 반올림하여 출력, 예: 0.578)",
+      "hint": "1. 90백분위수 계산: fare_90 = df['Fare'].quantile(0.90)\n2. 상위 10% 승객 필터링: top_df = df[df['Fare'] >= fare_90]\n3. 생존율 계산: round(top_df['Survived'].mean(), 3)",
+      "starter_code": "import pandas as pd\n\ndf = pd.read_csv('data/titanic.csv')\n\n# Fare 90백분위수 이상 필터링 후 Survived 평균 계산\n",
+      "solution_code": "import pandas as pd\n\ndf = pd.read_csv('data/titanic.csv')\nthreshold = df['Fare'].quantile(0.90)\ntop_df = df[df['Fare'] >= threshold]\nans = round(top_df['Survived'].mean(), 3)\nprint(ans)",
+      "expected": 0.578,
+      "answer_type": "float",
+      "tolerance": 0.005,
+      "points": 10
+    },
+    {
+      "id": "T1-5",
+      "title": "보스턴 주택 주택가격(MEDV)과의 최고 상관계수",
+      "dataset": "data/boston_housing.csv",
+      "description": "boston_housing.csv 데이터셋에서 'MEDV'(주택 가격)와 다른 수치형 변수들 간의 피어슨 상관계수를 계산했을 때, 상관계수의 절댓값이 가장 큰 변수와 그 상관계수 값을 구하시오. (상관계수 값을 소수점 둘째 자리까지 반올림하여 출력)",
+      "hint": "1. 상관계수 행렬: corrs = df.corr()['MEDV'].drop('MEDV')\n2. 절댓값 최대 변수: max_var = corrs.abs().idxmax()\n3. 해당 변수의 실제 상관계수: round(corrs[max_var], 2)",
+      "starter_code": "import pandas as pd\n\ndf = pd.read_csv('data/boston_housing.csv')\n\n# 상관계수 계산 및 절댓값 최대 변수의 상관계수 출력\n",
+      "solution_code": "import pandas as pd\n\ndf = pd.read_csv('data/boston_housing.csv')\ncorrs = df.corr()['MEDV'].drop('MEDV')\nmax_var = corrs.abs().idxmax()\nans = round(corrs[max_var], 2)\nprint(ans)",
+      "expected": 0.56,
+      "answer_type": "float",
+      "tolerance": 0.02,
+      "points": 10
+    },
+    {
+      "id": "T1-6",
+      "title": "쇼핑 우수고객의 최다 사용 결제수단",
+      "dataset": "data/customer_shopping.csv",
+      "description": "customer_shopping.csv 데이터셋에서 고객별('CustomerID') 총 구매 횟수(행 개수)를 구했을 때, 총 구매 횟수가 5회 이상인 우수 고객들이 결제한 거래건 중 가장 많이 사용된 결제수단('PaymentMethod')의 명칭을 출력하시오.",
+      "hint": "1. 구매 횟수 집계: counts = df['CustomerID'].value_counts()\n2. 5회 이상 고객 추출: vip_ids = counts[counts >= 5].index\n3. 우수고객 데이터 필터링: vip_df = df[df['CustomerID'].isin(vip_ids)]\n4. 최빈 결제수단: vip_df['PaymentMethod'].mode()[0]",
+      "starter_code": "import pandas as pd\n\ndf = pd.read_csv('data/customer_shopping.csv')\n\n# 고객별 구매 횟수 계산 및 5회 이상 고객 필터링\n\n# 최빈 결제수단 문자열 출력\n",
+      "solution_code": "import pandas as pd\n\ndf = pd.read_csv('data/customer_shopping.csv')\ncounts = df['CustomerID'].value_counts()\nvip_ids = counts[counts >= 5].index\nvip_df = df[df['CustomerID'].isin(vip_ids)]\nans = vip_df['PaymentMethod'].mode()[0]\nprint(ans)",
+      "expected": "Debit Card",
+      "answer_type": "string",
+      "tolerance": 0,
+      "points": 10
+    }
+  ],
+  "type2": [
+    {
+      "id": "T2-1",
+      "title": "통신사 고객 이탈 여부 예측 (Classification)",
+      "train_dataset": "data/cust_churn_train.csv",
+      "test_dataset": "data/cust_churn_test.csv",
+      "ground_truth": "data/cust_churn_ground_truth.csv",
+      "id_col": "CustomerID",
+      "target_col": "Churn",
+      "metric": "roc_auc",
+      "description": "통신사의 고객 정보 데이터를 바탕으로 고객 이탈 여부(Churn: 0 또는 1)를 예측하는 이진 분류 모델을 구축하시오.\n\n[제출 요구사항]\n1. X_train, y_train을 활용하여 결측치 처리, 인코딩, 스케일링 등 전처리 수행\n2. 머신러닝 모델(RandomForest, GradientBoosting 등) 훈련 및 검증\n3. X_test에 대해 이탈 확률(또는 예측 클래스)을 예측\n4. 최종 예측 결과를 'result.csv' 파일로 저장 (컬럼: CustomerID, pred / 인덱스 제외)\n\n[평가 지표]\n- ROC-AUC 점수로 평가되며, 0.75 이상 시 고득점이 부여됩니다. (만점: 40점)",
+      "starter_code": "import pandas as pd\nimport numpy as np\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.metrics import roc_auc_score\n\n# 1. 데이터 로드\ntrain = pd.read_csv('data/cust_churn_train.csv')\ntest = pd.read_csv('data/cust_churn_test.csv')\n\n# 2. 피처/타깃 분리 및 전처리\n\n# 3. 모델 학습\n\n# 4. 테스트 데이터 예측 및 CSV 파일 저장\n# 제출 포맷: pd.DataFrame({'CustomerID': test['CustomerID'], 'pred': preds}).to_csv('result.csv', index=False)\n",
+      "solution_code": "import pandas as pd\nfrom sklearn.ensemble import RandomForestClassifier\n\ntrain = pd.read_csv('data/cust_churn_train.csv')\ntest = pd.read_csv('data/cust_churn_test.csv')\n\nX_train = train.drop(columns=['CustomerID', 'Churn'])\ny_train = train['Churn']\nX_test = test.drop(columns=['CustomerID'])\n\n# One-Hot Encoding\nX_train = pd.get_dummies(X_train)\nX_test = pd.get_dummies(X_test)\nX_train, X_test = X_train.align(X_test, join='left', axis=1, fill_value=0)\n\nmodel = RandomForestClassifier(n_estimators=100, max_depth=6, random_state=42)\nmodel.fit(X_train, y_train)\npreds = model.predict_proba(X_test)[:, 1]\n\noutput = pd.DataFrame({\n    'CustomerID': test['CustomerID'],\n    'pred': preds\n})\noutput.to_csv('result.csv', index=False)\nprint('Submission result.csv successfully generated!')",
+      "rubric": {
+        "0.78": 40,
+        "0.74": 36,
+        "0.70": 32,
+        "0.65": 28,
+        "0.60": 24,
+        "0.50": 15
+      },
+      "points": 40
+    }
+  ],
+  "type3": [
+    {
+      "id": "T3-1",
+      "title": "임상시험 신약 복용 전/후 혈압 차이 검정 (대응표본 t-검정)",
+      "dataset": "data/medical_treatment.csv",
+      "description": "고혈압 환자 60명을 대상으로 신약을 복용하기 전('BloodPressure_Before')과 복용 후('BloodPressure_After')의 혈압을 측정하였다.\n신약 복용 전과 후의 혈압 평균 차이가 존재하는지 대응표본 t-검정(Paired t-test)을 수행하고 다음 물음에 답하시오. (유의수준: 0.05)",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "question": "1. 대응표본 t-검정을 수행한 검정통계량(t-statistic)의 값을 구하시오. (소수점 넷째 자리까지 반올림)",
+          "type": "float",
+          "expected": 11.1772,
+          "tolerance": 0.01,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "question": "2. 위의 검정에 대한 유의확률(p-value)을 구하시오. (소수점 넷째 자리까지 반올림, 예: 0.0000)",
+          "type": "float",
+          "expected": 0.0000,
+          "tolerance": 0.0005,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "question": "3. 유의수준 0.05 하에서 귀무가설의 기각 여부와 신약의 유의미한 혈압 변화 효과가 있는지 판정하시오.",
+          "type": "choice",
+          "options": [
+            "귀무가설 기각 (p < 0.05, 신약 복용 전후 유의미한 혈압 차이가 있음)",
+            "귀무가설 채택 (p >= 0.05, 신약 복용 전후 유의미한 혈압 차이가 없음)"
+          ],
+          "expected": "귀무가설 기각 (p < 0.05, 신약 복용 전후 유의미한 혈압 차이가 있음)",
+          "points": 5
+        }
+      ],
+      "solution_code": "import pandas as pd\nfrom scipy import stats\n\ndf = pd.read_csv('data/medical_treatment.csv')\nt_stat, p_val = stats.ttest_rel(df['BloodPressure_Before'], df['BloodPressure_After'])\nprint(f'검정통계량: {round(t_stat, 4)}')\nprint(f'p-value: {round(p_val, 4)}')",
+      "points": 15
+    },
+    {
+      "id": "T3-2",
+      "title": "A/B 테스트 마케팅 전략별 구매액 차이 검정 (독립표본 t-검정)",
+      "dataset": "data/marketing_ab.csv",
+      "description": "두 가지 마케팅 전략 A와 B를 적용한 고객들의 구매 금액('SpentAmount') 데이터이다.\n두 집단 간의 구매 금액 평균에 유의미한 차이가 있는지 검정하고자 한다. (유의수준: 0.05)",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "question": "1. 두 집단 간의 등분산성(Levene 검정) 검정통계량 값을 구하시오. (소수점 넷째 자리까지 반올림)",
+          "type": "float",
+          "expected": 0.4432,
+          "tolerance": 0.01,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "question": "2. 등분산 검정 결과(p > 0.05)를 바탕으로 독립표본 t-검정(등분산 가정)을 수행했을 때의 유의확률(p-value)을 구하시오. (소수점 넷째 자리까지 반올림)",
+          "type": "float",
+          "expected": 0.0021,
+          "tolerance": 0.0005,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "question": "3. 유의수준 0.05 하에서 A그룹과 B그룹의 구매금액 평균 차이에 대한 최종 결론을 선택하시오.",
+          "type": "choice",
+          "options": [
+            "귀무가설 기각 (두 그룹 간 평균 구매액에 통계적으로 유의미한 차이가 존재함)",
+            "귀무가설 채택 (두 그룹 간 평균 구매액에 통계적으로 유의미한 차이가 없음)"
+          ],
+          "expected": "귀무가설 기각 (두 그룹 간 평균 구매액에 통계적으로 유의미한 차이가 존재함)",
+          "points": 5
+        }
+      ],
+      "solution_code": "import pandas as pd\nfrom scipy import stats\n\ndf = pd.read_csv('data/marketing_ab.csv')\ng_a = df[df['Group'] == 'A']['SpentAmount']\ng_b = df[df['Group'] == 'B']['SpentAmount']\n\nlev_stat, lev_p = stats.levene(g_a, g_b)\nt_stat, t_p = stats.ttest_ind(g_a, g_b, equal_var=True)\nprint(f'등분산 통계량: {round(lev_stat, 4)}, p-val: {round(lev_p, 4)}')\nprint(f'독립 t 통계량: {round(t_stat, 4)}, p-val: {round(t_p, 4)}')",
+      "points": 15
+    },
+    {
+      "id": "T3-3",
+      "title": "지역별 매장 일일 매출 차이 분석 (일원배치 분산분석 ANOVA)",
+      "dataset": "data/store_anova.csv",
+      "description": "East, West, South 세 지역의 지점별 일일 매출('DailySales') 데이터이다.\n세 지역 간의 일일 매출 평균에 유의미한 차이가 있는지 일원배치 분산분석(One-way ANOVA)을 수행하시오. (유의수준: 0.05)",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "question": "1. 일원배치 분산분석(One-way ANOVA)의 F-검정통계량(F-statistic) 값을 구하시오. (소수점 넷째 자리까지 반올림)",
+          "type": "float",
+          "expected": 14.6198,
+          "tolerance": 0.02,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "question": "2. 일원배치 분산분석의 유의확률(p-value)을 구하시오. (소수점 넷째 자리까지 반올림, 예: 0.0000)",
+          "type": "float",
+          "expected": 0.0000,
+          "tolerance": 0.0005,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "question": "3. 유의수준 0.05 하에서 분산분석 검정 결과에 대한 해석으로 올바른 것을 고르시오.",
+          "type": "choice",
+          "options": [
+            "귀무가설 기각 (적어도 한 지역의 평균 매출은 다른 지역과 유의미한 차이가 있음)",
+            "귀무가설 채택 (세 지역의 평균 매출은 통계적으로 동일함)"
+          ],
+          "expected": "귀무가설 기각 (적어도 한 지역의 평균 매출은 다른 지역과 유의미한 차이가 있음)",
+          "points": 5
+        }
+      ],
+      "solution_code": "import pandas as pd\nfrom scipy import stats\n\ndf = pd.read_csv('data/store_anova.csv')\neast = df[df['Region'] == 'East']['DailySales']\nwest = df[df['Region'] == 'West']['DailySales']\nsouth = df[df['Region'] == 'South']['DailySales']\n\nf_stat, p_val = stats.f_oneway(east, west, south)\nprint(f'F-statistic: {round(f_stat, 4)}')\nprint(f'p-value: {round(p_val, 4)}')",
+      "points": 15
+    },
+    {
+      "id": "T3-4",
+      "title": "연령대와 브랜드 선호도 간의 독립성 검정 (카이제곱 검정)",
+      "dataset": "data/survey_chi2.csv",
+      "description": "설문조사 데이터에서 연령대('AgeGroup')와 선호 브랜드('BrandPreference') 간의 관련성이 있는지 카이제곱 독립성 검정을 수행하시오. (유의수준: 0.05)",
+      "sub_questions": [
+        {
+          "id": "q1",
+          "question": "1. 교차표를 생성하고 계산한 카이제곱 검정통계량(chi2-statistic)을 구하시오. (소수점 넷째 자리까지 반올림)",
+          "type": "float",
+          "expected": 38.0209,
+          "tolerance": 0.05,
+          "points": 5
+        },
+        {
+          "id": "q2",
+          "question": "2. 검정의 자유도(degrees of freedom)를 구하시오. (정수)",
+          "type": "int",
+          "expected": 6,
+          "tolerance": 0,
+          "points": 5
+        },
+        {
+          "id": "q3",
+          "question": "3. 유의확률(p-value)이 0.05보다 작으므로 귀무가설 기각 여부와 두 변수의 독립성 판단을 고르시오.",
+          "type": "choice",
+          "options": [
+            "귀무가설 기각 (연령대와 브랜드 선호도는 서로 독립이 아니며 관련성이 있음)",
+            "귀무가설 채택 (연령대와 브랜드 선호도는 서로 독립임)"
+          ],
+          "expected": "귀무가설 기각 (연령대와 브랜드 선호도는 서로 독립이 아니며 관련성이 있음)",
+          "points": 5
+        }
+      ],
+      "solution_code": "import pandas as pd\nfrom scipy import stats\n\ndf = pd.read_csv('data/survey_chi2.csv')\ntab = pd.crosstab(df['AgeGroup'], df['BrandPreference'])\nchi2_stat, p_val, dof, ex = stats.chi2_contingency(tab)\nprint(f'Chi2-statistic: {round(chi2_stat, 4)}')\nprint(f'자유도: {dof}')\nprint(f'p-value: {round(p_val, 4)}')",
+      "points": 15
+    }
+  ],
+  "mock_exams": [
+    {
+      "id": "MOCK-1",
+      "name": "제1회 빅데이터 분석기사 실전 모의고사 (합격 패스 표준형)",
+      "duration_minutes": 180,
+      "total_points": 100,
+      "type1_ids": ["T1-1", "T1-2", "T1-3"],
+      "type2_ids": ["T2-1"],
+      "type3_ids": ["T3-1", "T3-2"]
+    },
+    {
+      "id": "MOCK-2",
+      "name": "제2회 빅데이터 분석기사 실전 모의고사 (심화 통계/분류형)",
+      "duration_minutes": 180,
+      "total_points": 100,
+      "type1_ids": ["T1-4", "T1-5", "T1-6"],
+      "type2_ids": ["T2-1"],
+      "type3_ids": ["T3-3", "T3-4"]
+    }
+  ]
+}

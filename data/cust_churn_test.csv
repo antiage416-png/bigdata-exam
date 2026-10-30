@@ -1,0 +1,601 @@
+CustomerID,Age,Gender,Tenure,Contract,TechSupport,OnlineSecurity,MonthlyCharges,TotalCharges
+11401,38,Male,28,Two year,No,Yes,106.5,2955.13
+11402,64,Male,29,Month-to-month,No,No,114.79,3367.64
+11403,31,Male,18,Month-to-month,Yes,Yes,63.03,1149.84
+11404,50,Male,35,Month-to-month,Yes,No,113.13,4024.35
+11405,65,Female,47,One year,No,No,90.88,4300.17
+11406,27,Female,5,One year,No,No,26.93,84.23
+11407,36,Female,59,One year,Yes,Yes,86.81,5035.64
+11408,47,Male,59,One year,No,No,87.3,5166.26
+11409,39,Male,47,Month-to-month,Yes,No,108.77,5085.77
+11410,20,Male,13,Two year,Yes,Yes,56.55,686.13
+11411,54,Female,33,One year,Yes,No,77.32,2488.18
+11412,58,Male,62,One year,Yes,No,21.19,1321.83
+11413,35,Male,16,Two year,No,No,52.54,916.03
+11414,28,Female,44,One year,No,No,26.1,1127.97
+11415,65,Female,58,Month-to-month,No,Yes,71.14,4155.63
+11416,19,Male,6,Month-to-month,No,No,100.11,595.55
+11417,29,Female,15,Month-to-month,Yes,Yes,40.23,538.98
+11418,71,Male,4,Month-to-month,No,Yes,71.69,323.5
+11419,23,Female,56,Two year,Yes,Yes,39.99,2184.71
+11420,60,Female,64,Month-to-month,No,Yes,31.83,2038.2
+11421,57,Female,68,One year,No,No,70.08,4748.36
+11422,61,Male,34,Month-to-month,Yes,Yes,27.76,988.49
+11423,46,Male,56,Month-to-month,No,No,77.56,4290.45
+11424,47,Male,32,Two year,Yes,No,23.07,757.78
+11425,19,Female,9,Two year,Yes,No,30.46,232.15
+11426,26,Female,63,Month-to-month,Yes,No,73.9,4630.14
+11427,64,Female,33,Month-to-month,Yes,No,77.96,2390.92
+11428,19,Female,21,Month-to-month,Yes,No,22.84,584.24
+11429,46,Male,55,Month-to-month,Yes,No,76.19,4217.98
+11430,50,Male,57,Month-to-month,No,No,102.17,5785.32
+11431,27,Male,2,Month-to-month,Yes,No,90.79,125.35
+11432,51,Female,13,Two year,No,No,32.86,402.4
+11433,61,Female,4,One year,No,No,78.06,348.08
+11434,72,Male,50,Two year,No,No,85.88,4199.4
+11435,25,Female,48,One year,Yes,Yes,23.65,1128.12
+11436,54,Male,30,Month-to-month,Yes,Yes,103.82,3203.13
+11437,71,Female,29,Two year,No,Yes,108.81,3098.79
+11438,50,Female,8,Month-to-month,No,No,103.34,830.74
+11439,64,Male,12,Two year,No,Yes,100.81,1319.89
+11440,23,Male,41,Month-to-month,Yes,No,93.01,3845.02
+11441,61,Female,26,Month-to-month,No,No,82.08,2140.38
+11442,57,Male,50,Two year,Yes,No,86.51,4350.83
+11443,62,Male,2,One year,No,No,99.03,178.02
+11444,36,Female,55,Two year,No,No,84.92,4735.58
+11445,49,Female,56,Two year,Yes,No,52.12,2898.75
+11446,44,Female,14,Month-to-month,No,No,56.84,697.8
+11447,18,Male,6,Month-to-month,Yes,No,107.91,627.89
+11448,60,Female,61,Month-to-month,No,No,21.68,1274.14
+11449,69,Female,12,One year,No,No,88.48,1047.7
+11450,50,Female,13,One year,No,Yes,113.57,1463.46
+11451,57,Female,19,Month-to-month,Yes,No,89.21,1754.86
+11452,49,Female,44,One year,Yes,No,117.4,5200.36
+11453,22,Male,59,One year,No,No,87.38,5168.58
+11454,34,Female,37,Month-to-month,No,No,23.37,864.54
+11455,25,Female,25,Two year,No,No,101.05,2473.31
+11456,74,Male,16,One year,Yes,No,47.89,657.18
+11457,59,Female,38,Two year,Yes,Yes,63.71,2426.64
+11458,51,Female,43,Month-to-month,No,No,50.59,2215.1
+11459,26,Male,14,Month-to-month,No,Yes,46.32,643.06
+11460,73,Female,6,Month-to-month,No,No,62.28,346.94
+11461,40,Male,23,Month-to-month,No,No,57.12,1336.99
+11462,52,Female,60,Two year,No,Yes,82.07,4920.03
+11463,67,Male,12,Month-to-month,Yes,No,99.69,1280.57
+11464,24,Male,13,One year,Yes,No,49.11,700.07
+11465,32,Female,6,Month-to-month,No,Yes,40.94,293.62
+11466,70,Male,63,Month-to-month,No,No,85.36,5415.57
+11467,71,Male,38,Month-to-month,No,Yes,85.69,3191.71
+11468,37,Female,50,One year,No,No,108.31,5448.65
+11469,67,Female,52,One year,Yes,No,21.56,1139.94
+11470,42,Male,40,Month-to-month,Yes,No,103.6,4174.32
+11471,20,Female,8,Two year,No,No,71.06,593.11
+11472,72,Male,61,Month-to-month,No,No,80.89,4956.93
+11473,63,Male,8,Month-to-month,No,Yes,28.95,366.64
+11474,41,Female,34,Month-to-month,No,No,62.4,2117.79
+11475,51,Female,60,Month-to-month,No,No,42.28,2583.62
+11476,63,Male,57,Two year,Yes,Yes,44.91,2536.32
+11477,39,Female,46,Month-to-month,No,No,69.4,3231.93
+11478,28,Female,22,Month-to-month,No,Yes,99.62,2238.61
+11479,65,Male,40,Month-to-month,No,No,92.89,3733.82
+11480,25,Male,45,One year,No,No,77.92,3589.86
+11481,56,Male,55,Month-to-month,Yes,No,72.86,3963.09
+11482,60,Male,51,One year,Yes,No,61.88,3131.52
+11483,52,Male,5,Month-to-month,Yes,No,115.33,587.27
+11484,66,Male,13,Month-to-month,Yes,Yes,74.9,1017.74
+11485,63,Female,28,Two year,No,No,44.89,1265.89
+11486,55,Male,62,Month-to-month,No,No,42.55,2702.39
+11487,25,Female,24,Two year,No,No,79.91,1884.76
+11488,71,Female,7,Month-to-month,No,No,71.24,441.65
+11489,54,Male,38,Two year,Yes,Yes,20.75,803.91
+11490,44,Female,37,Month-to-month,No,No,101.35,3746.09
+11491,45,Male,68,One year,Yes,Yes,89.0,6079.14
+11492,57,Female,42,Month-to-month,Yes,Yes,84.86,3562.75
+11493,51,Male,5,Month-to-month,No,No,26.74,116.7
+11494,49,Male,64,Month-to-month,No,Yes,55.48,3546.97
+11495,32,Male,50,Month-to-month,No,Yes,111.67,5584.94
+11496,61,Male,15,Month-to-month,Yes,No,104.53,1552.7
+11497,34,Female,53,Month-to-month,No,Yes,47.98,2532.78
+11498,50,Female,25,One year,Yes,Yes,35.39,864.57
+11499,64,Female,9,One year,Yes,Yes,64.01,618.92
+11500,63,Female,38,One year,No,Yes,54.87,2094.76
+11501,69,Female,22,One year,No,No,86.86,2023.76
+11502,71,Male,49,Month-to-month,No,No,114.71,5628.83
+11503,33,Male,68,Month-to-month,No,No,55.57,3751.22
+11504,46,Male,15,Month-to-month,No,No,26.1,525.03
+11505,26,Male,65,Two year,No,Yes,107.97,7038.73
+11506,50,Male,54,Month-to-month,No,Yes,23.72,1330.39
+11507,66,Female,30,Month-to-month,No,Yes,113.37,3430.71
+11508,46,Male,20,One year,No,No,85.13,1733.75
+11509,30,Male,33,Month-to-month,No,No,112.29,3732.35
+11510,38,Female,7,Two year,Yes,No,39.57,221.89
+11511,38,Female,8,Two year,No,No,23.99,210.3
+11512,22,Male,28,Month-to-month,No,Yes,67.84,1833.28
+11513,27,Male,45,Month-to-month,Yes,No,64.16,2878.48
+11514,23,Female,11,Month-to-month,No,No,52.49,541.11
+11515,73,Male,31,One year,Yes,No,113.85,3547.22
+11516,68,Male,12,Month-to-month,No,No,100.61,1224.03
+11517,74,Male,51,One year,No,No,84.84,4350.9
+11518,30,Female,44,One year,Yes,No,35.96,1596.6
+11519,18,Male,50,Month-to-month,No,No,91.96,4567.66
+11520,37,Male,17,Month-to-month,No,No,91.25,1538.2
+11521,74,Female,35,One year,No,No,61.66,2204.12
+11522,64,Female,1,Month-to-month,Yes,Yes,110.63,164.02
+11523,63,Female,29,Two year,No,No,36.36,997.1
+11524,25,Male,51,Month-to-month,No,No,46.2,2279.65
+11525,27,Female,64,One year,No,Yes,26.2,1640.46
+11526,26,Male,4,Two year,No,No,97.95,444.06
+11527,66,Female,28,Two year,No,Yes,80.93,2326.78
+11528,58,Male,16,Month-to-month,No,No,50.86,767.52
+11529,20,Female,63,Month-to-month,No,No,36.05,2286.52
+11530,28,Male,53,One year,Yes,Yes,23.93,1360.01
+11531,29,Male,17,Month-to-month,No,Yes,36.34,638.55
+11532,27,Female,40,Month-to-month,No,No,64.42,2647.88
+11533,42,Female,13,Two year,No,No,44.22,624.8
+11534,66,Male,52,Month-to-month,Yes,No,45.38,2314.25
+11535,66,Female,58,Month-to-month,Yes,No,105.81,6127.48
+11536,42,Male,37,Month-to-month,Yes,No,70.48,2609.5
+11537,28,Female,61,One year,Yes,No,91.47,5584.88
+11538,71,Female,34,One year,No,Yes,23.5,844.82
+11539,53,Male,70,Month-to-month,Yes,Yes,55.79,3925.73
+11540,56,Female,17,Month-to-month,No,Yes,66.96,991.51
+11541,70,Female,20,Month-to-month,Yes,Yes,38.27,699.76
+11542,43,Male,59,One year,Yes,No,31.78,1765.65
+11543,31,Male,69,Month-to-month,No,Yes,105.29,7273.78
+11544,56,Female,33,Two year,Yes,No,112.06,3710.0
+11545,73,Male,17,Month-to-month,No,No,27.72,485.4
+11546,57,Female,57,Two year,Yes,Yes,54.2,3041.45
+11547,18,Female,1,Month-to-month,No,No,113.91,147.62
+11548,73,Male,13,One year,No,Yes,28.15,401.76
+11549,71,Male,27,Month-to-month,No,No,83.08,2180.4
+11550,21,Male,70,Month-to-month,Yes,Yes,115.28,7996.3
+11551,47,Male,59,Two year,No,No,115.87,6836.32
+11552,29,Male,6,Two year,No,No,66.18,486.67
+11553,73,Male,23,Month-to-month,No,No,35.95,911.84
+11554,52,Female,10,One year,No,No,39.8,426.17
+11555,30,Female,51,One year,Yes,No,107.18,5429.68
+11556,69,Male,19,Two year,No,No,109.34,2121.8
+11557,48,Female,51,Month-to-month,Yes,No,79.57,4035.45
+11558,55,Female,68,Month-to-month,Yes,No,95.09,6427.74
+11559,60,Female,42,Month-to-month,No,No,92.51,3778.22
+11560,40,Female,57,Month-to-month,Yes,Yes,84.86,4842.14
+11561,21,Male,68,Two year,Yes,No,101.07,6841.27
+11562,69,Female,38,Month-to-month,Yes,No,87.17,3317.28
+11563,33,Female,62,Month-to-month,No,No,72.33,4369.49
+11564,24,Male,7,One year,No,Yes,43.22,311.03
+11565,39,Male,71,One year,No,No,92.9,6474.34
+11566,46,Male,50,Month-to-month,Yes,No,66.4,3374.4
+11567,28,Male,52,Month-to-month,No,No,48.89,2568.37
+11568,73,Female,26,Two year,No,No,98.59,2549.41
+11569,50,Male,26,Month-to-month,No,Yes,88.28,2323.42
+11570,46,Female,19,One year,Yes,Yes,111.86,2076.44
+11571,56,Female,9,One year,No,Yes,36.21,329.51
+11572,29,Male,61,Month-to-month,No,No,83.62,5140.56
+11573,24,Male,20,Two year,Yes,No,43.94,724.09
+11574,72,Male,50,One year,Yes,Yes,108.55,5405.14
+11575,56,Male,22,Month-to-month,Yes,No,29.75,653.37
+11576,59,Male,13,One year,No,No,84.3,1086.09
+11577,65,Male,12,One year,Yes,Yes,97.53,1243.22
+11578,43,Female,10,One year,No,Yes,54.78,491.6
+11579,57,Female,65,Two year,Yes,No,113.51,7347.09
+11580,26,Female,30,Month-to-month,No,No,103.37,3005.31
+11581,58,Female,8,Month-to-month,Yes,No,48.87,466.47
+11582,51,Male,21,Month-to-month,No,No,20.74,423.23
+11583,62,Male,22,Month-to-month,No,No,49.07,1057.62
+11584,30,Female,18,Month-to-month,Yes,No,47.57,853.64
+11585,72,Female,66,Two year,No,No,107.22,7108.33
+11586,72,Female,48,One year,Yes,No,114.78,5526.81
+11587,53,Male,44,One year,No,No,26.9,1315.99
+11588,42,Male,9,One year,No,No,66.19,618.41
+11589,41,Male,67,Two year,Yes,Yes,73.74,4917.32
+11590,61,Female,54,Month-to-month,Yes,No,29.11,1543.87
+11591,34,Female,26,Two year,Yes,No,56.99,1462.1
+11592,19,Male,26,Month-to-month,No,No,51.07,1252.73
+11593,30,Male,34,Two year,No,Yes,72.53,2468.01
+11594,48,Female,8,One year,No,Yes,84.8,717.57
+11595,46,Female,10,Month-to-month,Yes,No,88.94,858.73
+11596,67,Male,48,One year,Yes,Yes,33.4,1562.83
+11597,45,Female,55,Month-to-month,No,No,99.67,5557.65
+11598,44,Male,54,Month-to-month,Yes,No,86.5,4599.68
+11599,32,Male,40,One year,No,No,107.13,4181.81
+11600,48,Female,15,Month-to-month,Yes,Yes,64.03,902.8
+11601,57,Female,18,Month-to-month,Yes,Yes,107.6,1859.78
+11602,32,Female,23,Two year,No,Yes,104.85,2430.86
+11603,50,Male,62,One year,No,Yes,62.96,3885.48
+11604,37,Female,46,Two year,No,No,57.35,2627.12
+11605,59,Female,39,One year,Yes,No,111.42,4403.03
+11606,29,Male,15,Month-to-month,Yes,Yes,90.09,1316.78
+11607,54,Male,53,Month-to-month,No,Yes,110.97,5920.16
+11608,26,Female,64,One year,No,Yes,98.1,6353.97
+11609,40,Male,63,Two year,No,No,79.71,4998.95
+11610,25,Male,16,Month-to-month,Yes,No,31.35,538.45
+11611,49,Male,70,Two year,No,No,48.57,3387.81
+11612,65,Female,66,Two year,No,No,114.95,7632.9
+11613,31,Female,13,One year,No,No,51.3,588.33
+11614,44,Male,47,Two year,No,No,29.14,1287.3
+11615,42,Male,9,Month-to-month,No,Yes,89.34,784.5
+11616,30,Male,63,Two year,No,No,91.93,5747.14
+11617,72,Female,34,One year,No,Yes,47.97,1605.14
+11618,38,Male,29,Month-to-month,No,No,49.17,1414.95
+11619,62,Male,37,Two year,No,Yes,65.95,2476.15
+11620,48,Female,43,Month-to-month,No,No,22.14,931.64
+11621,54,Male,64,Month-to-month,No,Yes,97.35,6189.21
+11622,65,Female,24,One year,Yes,No,51.07,1208.1
+11623,60,Female,71,Month-to-month,Yes,Yes,103.67,7322.11
+11624,71,Female,34,Month-to-month,Yes,No,98.66,3307.74
+11625,22,Male,48,Two year,Yes,No,84.82,3990.71
+11626,30,Male,12,Month-to-month,Yes,No,51.84,625.55
+11627,45,Female,23,Month-to-month,Yes,No,70.6,1595.36
+11628,60,Male,13,Month-to-month,Yes,No,63.59,874.98
+11629,42,Female,45,Month-to-month,No,Yes,53.21,2322.08
+11630,68,Male,65,One year,Yes,No,103.12,6675.7
+11631,52,Female,47,One year,Yes,No,67.38,3257.51
+11632,64,Female,58,Two year,No,No,101.61,5846.4
+11633,56,Male,5,One year,No,No,30.31,139.72
+11634,24,Male,5,Month-to-month,No,No,33.82,108.31
+11635,55,Male,60,Two year,No,No,115.78,6879.38
+11636,49,Male,21,One year,No,No,77.6,1706.97
+11637,20,Female,24,One year,No,No,69.96,1687.59
+11638,62,Female,18,One year,No,Yes,71.27,1289.54
+11639,56,Male,21,Two year,No,Yes,41.1,778.28
+11640,54,Male,54,One year,No,No,90.43,4901.16
+11641,72,Female,10,Month-to-month,No,No,28.31,340.97
+11642,67,Male,24,One year,No,No,76.19,1886.03
+11643,39,Male,60,Month-to-month,Yes,Yes,75.94,4589.82
+11644,25,Male,57,Month-to-month,No,No,109.59,6190.16
+11645,34,Male,23,Month-to-month,No,No,71.57,1661.77
+11646,69,Female,22,Month-to-month,No,No,33.43,768.84
+11647,44,Female,68,Month-to-month,No,No,76.13,5087.12
+11648,50,Male,34,Month-to-month,No,No,28.95,928.24
+11649,63,Female,70,One year,No,Yes,39.97,2842.31
+11650,34,Male,28,Two year,No,No,23.05,689.2
+11651,59,Male,39,Two year,Yes,No,70.3,2664.27
+11652,29,Male,42,Month-to-month,No,No,28.28,1227.51
+11653,65,Female,23,One year,Yes,Yes,66.0,1522.77
+11654,63,Female,70,Two year,Yes,No,111.43,7839.15
+11655,44,Female,2,Month-to-month,No,Yes,90.54,149.35
+11656,65,Female,24,One year,Yes,No,27.59,694.42
+11657,25,Female,17,One year,No,Yes,41.97,755.68
+11658,40,Male,65,Month-to-month,Yes,Yes,86.02,5573.73
+11659,59,Male,70,Two year,Yes,Yes,107.68,7538.49
+11660,66,Female,69,Two year,No,Yes,23.23,1570.44
+11661,46,Female,60,Month-to-month,Yes,Yes,99.62,6059.78
+11662,67,Female,50,Month-to-month,No,No,75.06,3746.99
+11663,37,Male,12,Month-to-month,No,Yes,73.52,836.14
+11664,33,Female,47,Month-to-month,No,No,113.87,5316.1
+11665,34,Male,67,Month-to-month,No,Yes,93.27,6255.43
+11666,33,Male,65,Month-to-month,No,No,103.31,6752.82
+11667,36,Female,27,Month-to-month,No,No,54.69,1409.84
+11668,73,Male,48,Two year,No,Yes,74.33,3660.22
+11669,73,Male,62,Month-to-month,Yes,No,80.31,4994.65
+11670,25,Female,44,Month-to-month,No,Yes,51.52,2290.2
+11671,55,Male,19,Month-to-month,No,No,75.88,1436.86
+11672,55,Female,59,Month-to-month,No,No,43.19,2549.17
+11673,70,Male,8,Month-to-month,No,Yes,34.05,264.99
+11674,46,Female,55,Month-to-month,No,Yes,56.65,3166.64
+11675,58,Female,47,Month-to-month,No,Yes,92.45,4344.75
+11676,53,Male,2,Two year,No,No,109.79,257.93
+11677,43,Female,39,Two year,Yes,No,64.86,2507.85
+11678,48,Male,45,Month-to-month,Yes,No,83.0,3744.78
+11679,61,Male,32,Month-to-month,No,No,30.1,923.0
+11680,29,Female,65,One year,No,Yes,108.64,7122.43
+11681,72,Male,38,One year,Yes,Yes,75.72,2835.67
+11682,34,Female,11,Month-to-month,Yes,Yes,96.47,1044.92
+11683,32,Male,10,Two year,Yes,No,97.86,962.85
+11684,26,Male,59,One year,No,Yes,45.14,2645.56
+11685,56,Female,55,Month-to-month,No,No,71.86,3988.42
+11686,59,Male,20,One year,No,Yes,114.13,2266.77
+11687,65,Male,17,Two year,Yes,Yes,28.78,558.96
+11688,29,Male,68,One year,Yes,No,86.94,5871.0
+11689,49,Male,5,Month-to-month,Yes,No,114.3,579.97
+11690,42,Male,60,Month-to-month,Yes,No,49.46,2928.81
+11691,56,Male,23,Month-to-month,No,No,104.42,2422.71
+11692,35,Male,46,Month-to-month,No,No,111.5,5128.2
+11693,32,Male,52,One year,Yes,Yes,93.21,4839.17
+11694,49,Female,10,Two year,Yes,No,42.67,486.12
+11695,23,Male,46,One year,Yes,No,52.73,2392.86
+11696,61,Male,28,Two year,No,Yes,23.51,687.61
+11697,60,Female,43,Month-to-month,Yes,No,101.48,4325.19
+11698,69,Female,26,Two year,Yes,Yes,103.26,2690.39
+11699,52,Female,55,One year,Yes,Yes,82.01,4450.77
+11700,51,Male,48,Month-to-month,No,No,54.55,2585.27
+11701,55,Female,29,One year,No,No,27.53,794.26
+11702,73,Female,27,Month-to-month,No,No,93.8,2623.33
+11703,71,Male,18,One year,Yes,Yes,91.2,1646.64
+11704,74,Male,60,Month-to-month,No,No,109.44,6649.13
+11705,22,Female,69,Month-to-month,No,No,91.59,6330.73
+11706,35,Female,21,One year,Yes,Yes,101.21,2106.06
+11707,33,Male,24,One year,Yes,No,93.1,2311.37
+11708,25,Male,3,Month-to-month,No,No,81.81,267.28
+11709,42,Male,62,Month-to-month,Yes,No,61.84,3801.94
+11710,49,Male,2,Month-to-month,No,Yes,108.41,240.35
+11711,43,Male,66,One year,No,Yes,83.79,5515.51
+11712,69,Female,42,Two year,No,No,59.04,2380.23
+11713,39,Male,34,Two year,Yes,No,28.18,1004.92
+11714,48,Male,42,Month-to-month,No,No,48.49,2091.33
+11715,60,Male,20,One year,No,Yes,73.29,1557.7
+11716,27,Male,68,Month-to-month,Yes,No,47.01,3217.79
+11717,73,Male,45,One year,No,No,41.68,1863.16
+11718,74,Female,42,Month-to-month,Yes,Yes,71.68,3052.31
+11719,29,Male,47,Month-to-month,Yes,No,36.64,1764.57
+11720,70,Female,5,One year,No,No,98.44,574.11
+11721,45,Male,49,Month-to-month,Yes,Yes,67.47,3303.8
+11722,23,Female,37,One year,Yes,Yes,76.24,2812.6
+11723,37,Female,34,Two year,Yes,No,34.44,1135.18
+11724,22,Male,70,Month-to-month,No,No,51.81,3653.57
+11725,40,Male,18,Month-to-month,No,No,60.19,1006.01
+11726,26,Male,19,Two year,Yes,Yes,99.2,1923.6
+11727,46,Male,40,One year,No,Yes,95.48,3848.59
+11728,33,Male,17,Month-to-month,Yes,No,41.85,740.7
+11729,71,Female,60,Month-to-month,No,No,80.39,4830.31
+11730,63,Male,42,One year,No,Yes,43.86,1918.77
+11731,39,Male,65,One year,No,No,116.85,7638.85
+11732,25,Female,53,Month-to-month,No,Yes,113.31,5975.08
+11733,37,Male,7,Month-to-month,No,Yes,75.2,496.94
+11734,68,Female,5,Two year,Yes,Yes,88.49,398.47
+11735,31,Male,24,One year,No,Yes,98.54,2392.52
+11736,56,Female,28,Two year,Yes,No,90.66,2488.47
+11737,54,Male,62,One year,No,No,88.58,5546.13
+11738,67,Female,17,Two year,Yes,No,113.94,2003.13
+11739,51,Female,20,Month-to-month,Yes,No,78.45,1525.05
+11740,28,Male,3,One year,Yes,No,82.36,237.8
+11741,71,Male,37,Month-to-month,Yes,No,103.23,3820.34
+11742,57,Male,15,One year,No,No,85.65,1328.95
+11743,50,Female,51,Month-to-month,No,No,91.83,4763.8
+11744,48,Female,48,Month-to-month,No,No,42.95,1977.33
+11745,71,Female,8,Two year,No,No,56.38,435.13
+11746,61,Male,13,Two year,No,Yes,34.44,434.42
+11747,51,Male,48,Month-to-month,Yes,No,69.57,3269.33
+11748,67,Female,3,One year,Yes,No,64.66,169.72
+11749,24,Male,65,Month-to-month,Yes,No,117.72,7673.19
+11750,66,Female,31,Month-to-month,Yes,Yes,79.9,2462.97
+11751,71,Male,26,Two year,Yes,No,97.07,2446.59
+11752,40,Male,56,Month-to-month,Yes,No,52.73,3096.58
+11753,63,Female,34,Two year,Yes,Yes,101.49,3463.97
+11754,73,Male,9,Month-to-month,Yes,No,80.28,728.1
+11755,24,Male,62,One year,No,Yes,88.31,5420.32
+11756,71,Male,13,One year,Yes,Yes,48.85,648.09
+11757,42,Male,69,Month-to-month,No,No,73.77,5081.92
+11758,20,Male,41,Month-to-month,No,No,82.14,3273.31
+11759,55,Female,1,Two year,No,No,77.73,77.73
+11760,37,Male,47,One year,Yes,No,109.69,5195.18
+11761,51,Female,4,Month-to-month,Yes,Yes,108.03,529.32
+11762,66,Male,63,Month-to-month,Yes,Yes,115.16,7273.44
+11763,61,Male,52,Month-to-month,Yes,Yes,85.41,4496.47
+11764,61,Female,10,Month-to-month,Yes,Yes,115.25,1144.71
+11765,47,Female,28,Month-to-month,No,No,101.58,2839.91
+11766,34,Male,6,Month-to-month,No,No,46.54,333.79
+11767,27,Male,27,Two year,No,Yes,61.89,1754.17
+11768,52,Female,12,One year,No,Yes,43.36,585.37
+11769,37,Female,62,Two year,Yes,No,20.41,1212.1
+11770,35,Female,52,One year,No,Yes,38.43,1995.01
+11771,62,Female,48,Two year,Yes,No,20.4,993.08
+11772,61,Male,67,One year,No,No,90.54,6053.2
+11773,44,Male,46,One year,No,Yes,61.7,2857.59
+11774,66,Male,15,Two year,No,Yes,50.63,800.48
+11775,53,Male,71,One year,Yes,No,94.65,6770.29
+11776,40,Male,36,Month-to-month,No,Yes,101.58,3741.17
+11777,49,Female,14,One year,Yes,Yes,115.58,1601.65
+11778,27,Female,3,Two year,Yes,Yes,82.92,180.56
+11779,28,Female,67,One year,Yes,No,65.23,4388.32
+11780,55,Male,19,One year,Yes,No,49.92,1042.67
+11781,23,Female,54,One year,No,Yes,41.79,2232.81
+11782,58,Male,69,Two year,No,No,40.87,2854.37
+11783,64,Male,10,Month-to-month,Yes,No,60.1,635.79
+11784,51,Male,33,One year,No,No,117.2,3877.17
+11785,53,Female,13,Month-to-month,No,Yes,20.08,261.39
+11786,54,Male,51,One year,No,No,39.33,1959.66
+11787,34,Male,32,One year,No,No,38.46,1116.64
+11788,57,Female,24,Month-to-month,Yes,Yes,90.28,2111.13
+11789,57,Male,35,Month-to-month,Yes,Yes,54.54,1889.38
+11790,71,Female,70,One year,No,Yes,64.81,4591.57
+11791,29,Male,40,Month-to-month,No,Yes,34.57,1377.64
+11792,38,Female,54,Month-to-month,No,No,59.69,3197.31
+11793,57,Male,44,Two year,No,No,30.11,1280.29
+11794,36,Male,62,Month-to-month,No,No,72.24,4511.72
+11795,20,Female,68,Month-to-month,Yes,Yes,29.6,2080.72
+11796,35,Male,33,Two year,Yes,No,97.47,3269.68
+11797,70,Female,56,Month-to-month,Yes,No,75.53,4259.99
+11798,68,Male,36,Month-to-month,No,No,90.95,3200.42
+11799,36,Female,54,One year,No,No,61.01,3276.96
+11800,64,Male,19,One year,No,Yes,57.39,1187.78
+11801,23,Male,43,Two year,No,No,29.62,1329.76
+11802,33,Male,12,Two year,No,No,71.34,779.2
+11803,25,Female,11,One year,No,No,70.42,771.84
+11804,65,Female,70,Month-to-month,No,No,65.87,4629.05
+11805,35,Female,12,Month-to-month,Yes,Yes,92.57,1072.73
+11806,69,Female,41,Month-to-month,No,Yes,101.59,4049.73
+11807,65,Female,25,Month-to-month,No,No,93.58,2344.44
+11808,60,Male,3,One year,Yes,No,34.1,62.91
+11809,56,Male,3,One year,Yes,No,80.96,203.69
+11810,66,Male,28,Month-to-month,No,Yes,27.87,762.63
+11811,66,Male,23,Two year,Yes,No,88.07,2018.93
+11812,29,Male,48,Month-to-month,No,No,57.42,2755.71
+11813,62,Female,67,Month-to-month,Yes,No,32.98,2165.46
+11814,27,Male,42,One year,No,Yes,104.48,4377.15
+11815,24,Female,40,Month-to-month,No,Yes,80.17,3118.93
+11816,63,Male,6,Month-to-month,Yes,No,54.76,344.11
+11817,72,Female,20,Month-to-month,No,No,23.01,317.39
+11818,18,Female,11,Month-to-month,No,No,72.66,784.79
+11819,66,Female,27,One year,No,No,110.48,3028.92
+11820,53,Male,21,Two year,No,No,78.45,1594.48
+11821,38,Male,13,Month-to-month,No,Yes,115.22,1533.68
+11822,54,Male,35,Month-to-month,Yes,Yes,33.37,1225.74
+11823,69,Male,47,One year,No,Yes,75.69,3392.04
+11824,41,Female,28,Two year,No,Yes,98.22,2742.59
+11825,72,Female,21,Month-to-month,Yes,No,71.5,1357.71
+11826,42,Female,18,Month-to-month,Yes,No,28.92,514.65
+11827,24,Female,31,One year,Yes,Yes,77.12,2390.36
+11828,59,Male,60,One year,No,No,79.95,4672.87
+11829,34,Female,37,Month-to-month,No,No,91.41,3478.41
+11830,46,Male,21,One year,Yes,No,94.6,2000.9
+11831,47,Female,14,Month-to-month,No,Yes,95.54,1295.11
+11832,24,Female,60,Month-to-month,No,No,85.02,5174.47
+11833,50,Female,23,Month-to-month,Yes,No,41.15,856.67
+11834,24,Male,29,Two year,No,No,59.62,1667.52
+11835,41,Male,47,Month-to-month,No,No,96.06,4399.85
+11836,28,Female,30,Month-to-month,No,Yes,113.44,3493.25
+11837,26,Female,38,Month-to-month,Yes,No,27.74,1070.74
+11838,29,Female,27,Two year,Yes,No,72.48,1989.93
+11839,52,Male,15,Month-to-month,Yes,No,50.63,774.5
+11840,21,Male,59,Month-to-month,No,No,42.09,2512.0
+11841,53,Male,3,Month-to-month,No,Yes,69.57,212.61
+11842,45,Female,10,One year,No,Yes,79.4,807.55
+11843,74,Male,17,Month-to-month,Yes,No,20.96,361.7
+11844,30,Female,11,Month-to-month,Yes,Yes,96.46,1030.63
+11845,40,Male,48,Month-to-month,No,No,100.35,4814.47
+11846,36,Female,5,Two year,No,Yes,114.62,586.78
+11847,59,Female,69,One year,No,Yes,37.7,2606.83
+11848,54,Male,64,One year,No,No,78.27,4935.39
+11849,56,Female,14,Two year,Yes,Yes,61.81,798.09
+11850,41,Female,50,Two year,Yes,No,52.81,2694.64
+11851,33,Female,26,Month-to-month,Yes,No,75.43,1945.83
+11852,50,Male,69,Two year,Yes,No,96.67,6699.47
+11853,29,Female,7,Month-to-month,Yes,No,22.26,101.21
+11854,51,Male,16,Month-to-month,Yes,Yes,115.0,1766.34
+11855,24,Male,55,Two year,Yes,No,99.37,5423.17
+11856,28,Female,56,Month-to-month,Yes,No,93.61,5231.03
+11857,48,Male,4,Month-to-month,No,No,94.52,344.82
+11858,46,Female,48,Month-to-month,Yes,No,58.13,2854.94
+11859,30,Male,17,One year,No,No,93.66,1601.2
+11860,48,Female,36,Month-to-month,No,No,57.9,2176.85
+11861,19,Male,70,One year,No,No,108.07,7585.12
+11862,56,Female,38,Two year,No,Yes,37.37,1299.43
+11863,32,Female,62,One year,Yes,Yes,48.65,3069.1
+11864,74,Female,48,Month-to-month,No,No,74.03,3477.96
+11865,28,Female,10,Two year,No,Yes,51.28,524.33
+11866,51,Male,36,Month-to-month,No,Yes,61.58,2178.15
+11867,56,Male,29,Month-to-month,Yes,Yes,68.26,2086.68
+11868,21,Female,4,Month-to-month,Yes,No,103.92,487.66
+11869,28,Male,44,One year,Yes,No,71.27,3098.79
+11870,46,Female,56,Month-to-month,No,No,55.52,3102.75
+11871,19,Female,42,Month-to-month,No,No,44.28,1871.99
+11872,33,Male,13,Month-to-month,Yes,No,60.05,823.82
+11873,56,Male,46,Month-to-month,No,No,70.54,3246.3
+11874,30,Female,33,One year,No,No,93.12,3021.72
+11875,54,Male,21,Two year,No,No,31.86,633.18
+11876,34,Female,57,One year,No,No,41.72,2377.82
+11877,38,Male,69,Month-to-month,No,No,57.21,4009.21
+11878,61,Male,70,Month-to-month,Yes,No,55.32,3893.79
+11879,36,Male,67,Two year,No,No,58.39,3873.46
+11880,24,Male,48,Month-to-month,Yes,No,97.77,4725.38
+11881,55,Male,33,Two year,No,No,51.77,1689.06
+11882,25,Female,36,Month-to-month,No,No,69.19,2535.36
+11883,30,Male,33,Two year,No,No,81.14,2803.97
+11884,54,Male,31,Month-to-month,No,No,42.75,1307.31
+11885,19,Female,21,Month-to-month,Yes,No,90.43,1939.11
+11886,58,Female,27,One year,Yes,No,73.62,1950.47
+11887,28,Female,62,One year,No,Yes,63.78,3948.75
+11888,41,Male,26,Month-to-month,Yes,No,99.36,2584.84
+11889,23,Male,66,One year,No,No,43.86,2885.08
+11890,43,Female,12,One year,Yes,No,106.55,1401.75
+11891,24,Female,22,Month-to-month,Yes,Yes,74.98,1634.23
+11892,74,Female,17,Month-to-month,Yes,No,79.7,1384.24
+11893,56,Female,7,Month-to-month,No,No,105.76,643.82
+11894,36,Male,68,Month-to-month,No,Yes,100.12,6829.76
+11895,23,Male,37,One year,Yes,No,78.95,2978.25
+11896,60,Male,38,Month-to-month,Yes,No,93.81,3538.4
+11897,46,Male,11,Month-to-month,No,No,62.47,561.66
+11898,60,Male,1,Month-to-month,Yes,No,73.64,73.64
+11899,56,Female,25,Month-to-month,No,Yes,26.08,652.86
+11900,19,Male,42,Month-to-month,No,No,28.81,1246.22
+11901,36,Female,52,Month-to-month,No,No,101.28,5367.11
+11902,21,Female,24,Month-to-month,No,Yes,25.85,601.4
+11903,23,Female,53,Two year,No,No,36.6,1896.99
+11904,66,Male,56,Month-to-month,No,No,97.99,5429.09
+11905,74,Female,63,One year,No,No,20.11,1276.83
+11906,54,Male,8,Month-to-month,No,Yes,47.68,405.41
+11907,45,Female,59,Month-to-month,Yes,No,77.24,4529.88
+11908,47,Male,45,Month-to-month,No,No,78.35,3564.68
+11909,24,Female,27,Month-to-month,Yes,Yes,96.16,2619.59
+11910,26,Male,52,Two year,No,Yes,69.58,3620.32
+11911,42,Female,18,Two year,No,Yes,69.92,1213.44
+11912,50,Female,16,One year,Yes,No,91.08,1433.19
+11913,18,Female,66,One year,Yes,Yes,68.87,4423.93
+11914,68,Female,5,Month-to-month,No,Yes,79.63,409.94
+11915,23,Male,3,Month-to-month,No,No,107.98,325.26
+11916,35,Male,70,Two year,No,No,59.34,4163.22
+11917,27,Male,7,One year,No,No,57.74,429.4
+11918,45,Female,50,One year,Yes,No,20.35,1036.79
+11919,28,Female,14,Month-to-month,No,Yes,80.12,1116.16
+11920,50,Female,38,Month-to-month,No,No,22.92,873.39
+11921,18,Female,47,Two year,No,Yes,69.41,3192.05
+11922,30,Female,33,Month-to-month,Yes,No,98.81,3231.54
+11923,54,Female,43,Month-to-month,No,No,73.89,3179.79
+11924,37,Male,29,Month-to-month,Yes,Yes,46.42,1309.39
+11925,18,Male,57,Two year,Yes,No,97.04,5574.29
+11926,69,Male,5,Month-to-month,No,No,46.43,199.22
+11927,20,Male,60,Two year,Yes,Yes,91.84,5521.22
+11928,35,Male,70,Month-to-month,Yes,No,79.81,5592.53
+11929,58,Male,2,Two year,No,No,36.66,110.63
+11930,31,Male,70,One year,No,No,108.7,7654.04
+11931,48,Male,43,Month-to-month,No,No,39.66,1740.08
+11932,44,Female,4,One year,No,No,116.98,362.62
+11933,34,Female,56,Month-to-month,No,Yes,20.72,1220.03
+11934,72,Female,59,Month-to-month,Yes,Yes,45.82,2779.75
+11935,63,Female,9,Two year,Yes,No,39.59,332.2
+11936,46,Female,3,Month-to-month,Yes,Yes,21.37,75.94
+11937,53,Female,48,Month-to-month,No,No,91.77,4360.42
+11938,54,Female,43,Month-to-month,Yes,No,87.96,3684.86
+11939,43,Male,1,Month-to-month,Yes,Yes,97.65,97.65
+11940,70,Male,57,Two year,No,Yes,45.16,2547.11
+11941,34,Female,53,Month-to-month,No,No,63.54,3349.88
+11942,39,Male,16,Two year,No,No,84.59,1305.49
+11943,42,Male,51,Two year,No,No,63.1,3181.43
+11944,19,Male,55,Month-to-month,Yes,No,88.34,4858.15
+11945,72,Male,1,Month-to-month,No,Yes,82.13,82.13
+11946,39,Male,28,Two year,No,No,31.24,901.9
+11947,22,Female,53,Month-to-month,No,Yes,96.54,5150.7
+11948,21,Male,58,Month-to-month,Yes,No,90.63,5375.56
+11949,53,Female,60,Month-to-month,No,No,84.27,5112.48
+11950,23,Female,59,One year,No,No,35.2,2088.96
+11951,69,Female,22,One year,Yes,No,46.26,986.71
+11952,38,Male,8,Month-to-month,No,No,58.53,482.93
+11953,30,Female,49,Month-to-month,Yes,No,47.43,2340.4
+11954,71,Female,42,Two year,No,No,42.33,1752.19
+11955,54,Female,27,One year,No,No,98.93,2710.3
+11956,72,Female,39,One year,Yes,Yes,82.55,3149.55
+11957,42,Male,25,One year,Yes,No,75.42,1873.28
+11958,43,Female,38,Month-to-month,Yes,Yes,42.14,1629.11
+11959,72,Female,24,One year,Yes,Yes,109.97,2624.9
+11960,56,Female,24,Month-to-month,Yes,Yes,38.74,919.42
+11961,37,Female,60,Month-to-month,Yes,No,97.91,5867.71
+11962,50,Male,50,One year,No,Yes,114.73,5694.72
+11963,31,Female,66,Month-to-month,Yes,No,91.26,6081.86
+11964,73,Female,14,Two year,No,No,117.3,1591.3
+11965,53,Female,53,Month-to-month,No,Yes,83.8,4457.31
+11966,34,Female,32,Two year,No,No,41.31,1342.6
+11967,38,Female,48,Two year,No,Yes,39.97,1871.13
+11968,63,Female,39,Month-to-month,Yes,No,51.81,2024.25
+11969,33,Male,40,One year,Yes,No,20.7,782.52
+11970,63,Female,42,Month-to-month,No,No,86.81,3715.57
+11971,33,Male,8,Two year,No,Yes,46.33,313.7
+11972,73,Male,26,Month-to-month,No,No,99.89,2564.45
+11973,37,Female,12,One year,No,No,55.2,601.19
+11974,46,Male,43,Month-to-month,No,No,67.04,2814.84
+11975,45,Female,51,Month-to-month,No,No,114.64,5926.2
+11976,25,Male,63,Month-to-month,No,Yes,43.73,2782.13
+11977,41,Female,49,Month-to-month,Yes,No,90.68,4450.33
+11978,20,Male,27,One year,Yes,Yes,94.0,2505.17
+11979,42,Male,9,One year,No,Yes,41.66,420.32
+11980,36,Female,39,One year,No,No,69.1,2653.69
+11981,50,Male,65,Month-to-month,No,No,54.32,3570.48
+11982,19,Male,71,Month-to-month,Yes,No,95.65,6747.52
+11983,32,Male,71,Month-to-month,No,Yes,81.0,5718.77
+11984,39,Male,7,Two year,Yes,Yes,66.65,504.46
+11985,27,Male,67,Two year,No,No,96.38,6500.65
+11986,35,Female,10,Month-to-month,Yes,No,43.05,460.37
+11987,39,Male,71,Month-to-month,Yes,Yes,93.85,6610.87
+11988,63,Male,53,Month-to-month,Yes,No,104.81,5532.59
+11989,66,Female,57,One year,Yes,Yes,106.1,6055.54
+11990,44,Female,27,One year,No,No,96.8,2571.14
+11991,30,Female,54,One year,Yes,No,59.99,3308.01
+11992,50,Male,4,Month-to-month,Yes,No,116.22,344.78
+11993,22,Male,23,One year,No,No,57.2,1276.66
+11994,43,Male,48,One year,No,No,82.59,3938.84
+11995,30,Male,42,Month-to-month,Yes,No,35.79,1360.98
+11996,44,Female,3,Month-to-month,Yes,No,116.08,278.43
+11997,74,Female,3,Month-to-month,No,No,88.99,298.23
+11998,31,Male,28,Month-to-month,No,Yes,93.83,2628.75
+11999,41,Male,63,Two year,Yes,No,26.45,1745.01
+12000,20,Male,31,Month-to-month,No,Yes,94.81,3016.37
